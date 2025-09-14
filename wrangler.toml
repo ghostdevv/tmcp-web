@@ -14,3 +14,7 @@ enabled = true
 [[durable_objects.bindings]]
 name = "TMCP_DURABLE_OBJECT"
 class_name = "SyncLayer"
+
+[[migrations]]
+tag = "v1"
+new_classes = [ "SyncLayer" ]
