@@ -14,6 +14,9 @@ importers:
       '@tmcp/adapter-zod':
         specifier: ^0.1.6
         version: 0.1.6(tmcp@1.12.2(typescript@5.9.2))(zod@4.1.8)
+      '@tmcp/session-manager-durable-objects':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@tmcp/transport-http':
         specifier: ^0.6.0
         version: 0.6.0(tmcp@1.12.2(typescript@5.9.2))
@@ -377,6 +380,9 @@ packages:
     peerDependencies:
       tmcp: ^1.10.2
       zod: ^4.0.0
+
+  '@tmcp/session-manager-durable-objects@0.1.0':
+    resolution: {integrity: sha512-m5HNhVXZ5NI7HgWfKFzyanI2us+AGJtxmuQQsY+uOlS/ijXvzWcemWqzF429eB2NlAFI0eCys8idNLdl61dosg==}
 
   '@tmcp/session-manager@0.1.1':
     resolution: {integrity: sha512-L4kuE5p+L34SzCkdF/dKEPRjOybPnjmNIdv3Vejpnj1BU8WIabBtKT4VQCFxGnO2RVtflh3Rg+OxBOe8igswRA==}
@@ -834,6 +840,10 @@ snapshots:
       '@types/json-schema': 7.0.15
       tmcp: 1.12.2(typescript@5.9.2)
       zod: 4.1.8
+
+  '@tmcp/session-manager-durable-objects@0.1.0':
+    dependencies:
+      '@tmcp/session-manager': 0.1.1
 
   '@tmcp/session-manager@0.1.1': {}
 

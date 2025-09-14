@@ -1,3 +1,4 @@
+import { DurableObjectSessionManager } from '@tmcp/session-manager-durable-objects';
 import { ZodJsonSchemaAdapter } from '@tmcp/adapter-zod';
 import { HttpTransport } from '@tmcp/transport-http';
 import { NodeHtmlMarkdown } from 'node-html-markdown';
@@ -72,7 +73,11 @@ server.tool(
 	},
 );
 
-const transport = new HttpTransport(server);
+const transport = new HttpTransport(server, {
+	sessionManager: new DurableObjectSessionManager(),
+});
+
+export { SyncLayer } from '@tmcp/session-manager-durable-objects';
 
 export default {
 	async fetch(request: Request) {
