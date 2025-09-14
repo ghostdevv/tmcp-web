@@ -8,6 +8,9 @@ main = "src/index.ts"
 workers_dev = true
 preview_urls = false
 
+[observability]
+enabled = true
+
 [[durable_objects.bindings]]
 name = "TMCP_DURABLE_OBJECT"
 class_name = "SyncLayer"
