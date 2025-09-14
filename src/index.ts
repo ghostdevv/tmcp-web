@@ -1,4 +1,5 @@
 import { DurableObjectSessionManager } from '@tmcp/session-manager-durable-objects';
+// import { version } from '../package.json' with { type: 'json' };
 import { ZodJsonSchemaAdapter } from '@tmcp/adapter-zod';
 import { HttpTransport } from '@tmcp/transport-http';
 import { NodeHtmlMarkdown } from 'node-html-markdown';
