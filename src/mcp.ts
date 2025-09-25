@@ -1,12 +1,12 @@
-// import { version } from '../package.json' with { type: 'json' };
 import { fetchWikipediaPage, searchWikipedia } from './wikipedia';
 import { ZodJsonSchemaAdapter } from '@tmcp/adapter-zod';
 import { NodeHtmlMarkdown } from 'node-html-markdown';
+import { version } from '../package.json';
 import { McpServer } from 'tmcp';
 import { z } from 'zod';
 
 export const server = new McpServer(
-	{ name: 'fetch', version: '0.2.0', description: 'Fetch URLs and return as markdown' },
+	{ name: 'fetch', version, description: 'Fetch URLs and return as markdown' },
 	{
 		adapter: new ZodJsonSchemaAdapter(),
 		capabilities: {
