@@ -3,10 +3,12 @@
 	"version": "0.2.0",
 	"scripts": {
 		"dev": "wrangler dev",
-		"deploy": "wrangler deploy --minify"
+		"deploy": "wrangler deploy --minify",
+		"inspector": "mcp-inspector --transport http --server-url 'http://localhost:8787/mcp'"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250704.0",
+		"@modelcontextprotocol/inspector": "^0.16.8",
 		"@tmcp/adapter-zod": "^0.1.6",
 		"@tmcp/session-manager-durable-objects": "^0.1.0",
 		"@tmcp/transport-http": "^0.6.0",
