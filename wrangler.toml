@@ -17,7 +17,7 @@ class_name = "SyncLayer"
 
 [[kv_namespaces]]
 binding = "TMCP_SESSION_INFO"
-id = "00000000000000000000000000000000"
+id = "3926d2c83ece42ddab17ae7f5e9c6aba"
 
 [[migrations]]
 tag = "v1"
