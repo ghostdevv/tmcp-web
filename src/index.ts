@@ -6,6 +6,7 @@ import {
 } from '@tmcp/session-manager-durable-objects';
 
 const transport = new HttpTransport(server, {
+	path: '/mcp',
 	sessionManager: {
 		streams: new DurableObjectStreamSessionManager(),
 		info: new KVInfoSessionManager(),
