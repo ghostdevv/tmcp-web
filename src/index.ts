@@ -1,10 +1,14 @@
-import { DurableObjectStreamSessionManager } from '@tmcp/session-manager-durable-objects';
+import {
+	DurableObjectStreamSessionManager,
+	KVInfoSessionManager,
+} from '@tmcp/session-manager-durable-objects';
 import { HttpTransport } from '@tmcp/transport-http';
 import { server } from './mcp';
 
 const transport = new HttpTransport(server, {
 	sessionManager: {
 		streams: new DurableObjectStreamSessionManager(),
+		info: new KVInfoSessionManager(),
 	},
 });
 
