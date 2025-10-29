@@ -1,9 +1,11 @@
-import { DurableObjectSessionManager } from '@tmcp/session-manager-durable-objects';
+import { DurableObjectStreamSessionManager } from '@tmcp/session-manager-durable-objects';
 import { HttpTransport } from '@tmcp/transport-http';
 import { server } from './mcp';
 
 const transport = new HttpTransport(server, {
-	sessionManager: new DurableObjectSessionManager(),
+	sessionManager: {
+		streams: new DurableObjectStreamSessionManager(),
+	},
 });
 
 export { SyncLayer } from '@tmcp/session-manager-durable-objects';
