@@ -15,6 +15,10 @@ enabled = true
 name = "TMCP_DURABLE_OBJECT"
 class_name = "SyncLayer"
 
+[[kv_namespaces]]
+binding = "TMCP_SESSION_INFO"
+id = "3926d2c83ece42ddab17ae7f5e9c6aba"
+
 [[migrations]]
 tag = "v1"
 new_classes = [ "SyncLayer" ]
