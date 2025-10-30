@@ -11,6 +11,10 @@ preview_urls = false
 [observability]
 enabled = true
 
+[ai]
+binding = "AI"
+remote = true
+
 [[durable_objects.bindings]]
 name = "TMCP_DURABLE_OBJECT"
 class_name = "SyncLayer"

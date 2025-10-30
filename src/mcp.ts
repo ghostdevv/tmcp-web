@@ -1,9 +1,9 @@
 import { fetchWikipediaPage, searchWikipedia } from './wikipedia';
 import { ZodJsonSchemaAdapter } from '@tmcp/adapter-zod';
-import { NodeHtmlMarkdown } from 'node-html-markdown';
 import { version } from '../package.json';
 import { McpServer } from 'tmcp';
 import { z } from 'zod';
+import { env } from 'cloudflare:workers';
 
 export const server = new McpServer(
 	{ name: 'fetch', version, description: 'Fetch URLs and return as markdown' },
@@ -53,15 +53,29 @@ server.tool(
 				};
 			}
 
+			const supportedMimes = await env.AI.toMarkdown().supported();
 			const contentType = response.headers.get('content-type');
-			let result = await response.text();
 
-			if (contentType === 'text/html') {
-				const md = NodeHtmlMarkdown.translate(result);
-				result = md;
+			if (
+				!contentType ||
+				!supportedMimes.some((s) => s.mimeType.toLowerCase() === contentType)
+			) {
+				return { content: [{ type: 'text', text: await response.text() }] };
 			}
 
-			return { content: [{ type: 'text', text: result }] };
+			const result = await env.AI.toMarkdown({
+				name: 'fetched',
+				blob: await response.blob(),
+			});
+
+			if (result.format === 'error') {
+				return {
+					isError: true,
+					content: [{ type: 'text', text: result.error }],
+				};
+			}
+
+			return { content: [{ type: 'text', text: result.data }] };
 		} catch (e) {
 			console.error(e);
 			return {

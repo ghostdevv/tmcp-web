@@ -1,4 +1,4 @@
-import { NodeHtmlMarkdown } from 'node-html-markdown';
+import { toMarkdownBatch } from './markdown';
 
 interface SearchResult {
 	pageid: number;
@@ -28,10 +28,31 @@ export async function searchWikipedia(query: string) {
 
 	const data: SearchResponse = await response.json();
 
+	const converted = await toMarkdownBatch(
+		data.query.search.flatMap((result) => [
+			{
+				key: `${result.pageid}-title`,
+				contents: result.title,
+				mime: 'text/html',
+			},
+			{
+				key: `${result.pageid}-snippet`,
+				contents: result.snippet,
+				mime: 'text/html',
+			},
+		]),
+	);
+
+	if (converted.errors) {
+		throw new Error(
+			`unable to convert search results to markdown: "${JSON.stringify(converted.errors)}"`,
+		);
+	}
+
 	return data.query.search.map((result) => ({
 		pageId: result.pageid,
-		title: NodeHtmlMarkdown.translate(result.title),
-		snippet: NodeHtmlMarkdown.translate(result.snippet),
+		title: converted.get(`${result.pageid}-title`),
+		snippet: converted.get(`${result.pageid}-snippet`),
 	}));
 }
 
