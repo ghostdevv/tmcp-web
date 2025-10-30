@@ -15,8 +15,8 @@ importers:
         specifier: ^0.1.6
         version: 0.1.6(tmcp@1.16.0(typescript@5.9.3))(zod@4.1.12)
       '@tmcp/session-manager-durable-objects':
-        specifier: ^0.2.0
-        version: 0.2.0(tmcp@1.16.0(typescript@5.9.3))
+        specifier: ^0.2.1
+        version: 0.2.1(tmcp@1.16.0(typescript@5.9.3))
       '@tmcp/transport-http':
         specifier: ^0.8.0
         version: 0.8.0(tmcp@1.16.0(typescript@5.9.3))
@@ -804,8 +804,8 @@ packages:
       tmcp: ^1.10.2
       zod: ^4.0.0
 
-  '@tmcp/session-manager-durable-objects@0.2.0':
-    resolution: {integrity: sha512-DoP0J5nCIkT59TPcx4ER241PxCoHEVujIqh5zd8Gz3IzEqzdFw297U31DneKodLIx1LkKJ5EgLqUFGv++5mUWA==}
+  '@tmcp/session-manager-durable-objects@0.2.1':
+    resolution: {integrity: sha512-MW0pEtaoCfW7iG/nXcdmFOefrdnCy5Bs1UH7eyqj8QtwnmwJFLT2IeEVXfZnOvWIgk6EiYwbF1rXptitdlrRsA==}
 
   '@tmcp/session-manager@0.2.0':
     resolution: {integrity: sha512-/MjEFFvnvrV3DbnwEAXMBKhIFmm7z81EgazBtPhKP9i5pe37/iDkYHOa+SD6aaqT3V7gACQ1nmqoJH3MdrC7gQ==}
@@ -2382,7 +2382,7 @@ snapshots:
       tmcp: 1.16.0(typescript@5.9.3)
       zod: 4.1.12
 
-  '@tmcp/session-manager-durable-objects@0.2.0(tmcp@1.16.0(typescript@5.9.3))':
+  '@tmcp/session-manager-durable-objects@0.2.1(tmcp@1.16.0(typescript@5.9.3))':
     dependencies:
       '@tmcp/session-manager': 0.2.0(tmcp@1.16.0(typescript@5.9.3))
     transitivePeerDependencies:
