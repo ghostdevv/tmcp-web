@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fetch > turns html page to markdown 1`] = `
+{
+  "content": [
+    {
+      "text": "# Hello World
+
+Hello TMCP",
+      "type": "text",
+    },
+  ],
+}
+`;
