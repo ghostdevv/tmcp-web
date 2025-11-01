@@ -1,9 +1,9 @@
 import { fetchWikipediaPage, searchWikipedia } from './wikipedia';
 import { ZodJsonSchemaAdapter } from '@tmcp/adapter-zod';
 import { version } from '../package.json';
+import { env } from 'cloudflare:workers';
 import { McpServer } from 'tmcp';
 import { z } from 'zod';
-import { env } from 'cloudflare:workers';
 
 export const server = new McpServer(
 	{ name: 'fetch', version, description: 'Fetch URLs and return as markdown' },

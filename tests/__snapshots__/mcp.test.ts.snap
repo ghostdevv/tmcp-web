@@ -1,0 +1,200 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fetch > turns html page to markdown 1`] = `
+{
+  "content": [
+    {
+      "text": "# Hello World
+
+Hello TMCP",
+      "type": "text",
+    },
+  ],
+}
+`;
+
+exports[`wikipedia > fetches page 1`] = `
+{
+  "content": [
+    {
+      "text": "The British Rail Class 444 Desiro is a third-rail electric multiple-unit passenger train built by Siemens Transportation Systems in Austria between 2002 and 2004. The Class 444 currently operate on express passenger services for South Western Railway.
+The class first entered service with South West Trains in 2004.
+
+
+== Description ==
+
+At the start of the 21st century, as part of its franchise agreement, South West Trains was required to replace the slam-door rolling stock of Classes 411, 412, 421 and 423, which did not meet modern health and safety standards, with new trains by 2005. In April 2001 an order was placed with Siemens for 785 vehicles. This was originally to be split as 100 four-car Class 450/0 outer-suburban units, 32 five-car Class 450/2 inner-suburban units, and 45 five-car Class 444 express units.
+The Class 444 fleet was built at Siemens' Vienna plant. Before being shipped to Britain via the Channel Tunnel, the trains were extensively tested at Siemens' Wegberg-Wildenrath Test and Validation Centre in Germany. This was an attempt to reduce the time taken for new trains to enter service, by ironing out any problems beforehand. Many other designs of new train, such as the Alstom-built Class 458 units, had been plagued by problems and poor reliability. The Desiro fleet entered service faster than its competitors, but still suffered teething problems.
+Each unit is formed of five cars; a driving motor car at each end and three intermediate trailers. One trailer in each unit is provided with two wheelchair spaces and a universally-accessible toilet.
+The units have end-gangways, allowing passengers to move between units when used in multiple. Trains are limited to a ten-car length (i.e. two units), as longer trains cannot be accommodated in stations. At some stations with particularly short platforms (for example Shawford, in Hampshire), even a single unit of five cars is too long for the platform. Passengers used to have to board and alight via a single door opened by the guard, however, since the introduction of automatic selective door operation (ASDO) in early 2015, the computer system works out how many cars to release the doors on. 
+The fleet was originally painted in a mixture of SWT's express livery of white, with a blue window band, and red/orange swishes at the cab ends (although they replaced the South West Trains logo with a South Western Railway one, following their inheritance of the franchise). All units have since received the new South Western Railway livery, which is predominantly light grey with darker grey sections towards the cabs, and doors painted in the opposing shade of grey to the bodywork in that area.
+Each five-car unit has a first-class section taking up just over half of one car at one end. All seats have BS 1363 230 V mains sockets providing AC power for laptops or mobile phone chargers.
+Like all new-build third-rail rolling stock in the UK, one car in each unit is fitted with a recess for a pantograph that allows for a future conversion to AC overhead power.
+Both the Class 444 and 450 fleets are maintained at the purpose-built Northam Traincare Facility in Southampton, which is equipped to perform both preventative and corrective maintenance, deep-cleaning, and overhauls on up to eight units simultaneously.
+In March 2012, the Class 444, 450 and 458 fleets were fitted with regenerative braking.  
+A new variable-stiffness hydraulic bush has been fitted to the whole Class 444 fleet so as to reduce track damage and thus infrastructure maintenance costs. This work was completed by the end of 2013.
+
+
+== Awards ==
+Class 444 trains have been awarded the "Golden Spanner 2010" as Britain's most reliable trains by Modern Railways. During twelve months, SWT's fleet has set a new reliability record of almost 89,000 kilometres per technical delay.
+
+
+== Operations ==
+
+The first Class 444 units entered service with SWT in early 2004. As part of the launch, unit no. 444018 was named The Fab 444 at a ceremony at London Waterloo.
+The units were introduced on services from London Waterloo to Portsmouth Harbour via the Portsmouth Direct Line. They were also used on some services on the South West Main Line to Southampton Central, Bournemouth, Weymouth and on limited outer suburban services to Alton and Basingstoke. This allowed the withdrawal of the final 411 units by mid-2004, and inroads were made to the 421 and 423 fleets.
+It was originally hoped that the final slam-door trains would be withdrawn by the end of 2004. In the event, some were allowed to remain operational until May 2005, as the last replacement Desiros came into service. Initially, the Class 444s were used mainly on Portsmouth direct services, allowing the Class 442 units to be used on the Weymouth line. The Class 444 units were also used regularly on Sunday-only Bournemouth stopping services, Waterloo to Southampton services and the Brockenhurst to Wareham shuttle service. Previous power limitations meant that the trains were not permitted to run west of Poole; these restrictions have since been lifted.
+During 2007, the Class 444 units replaced the Class 442 on the Weymouth line. Some Class 442 workings were taken over by Class 444 units as early as November 2006; the final Class 442 was withdrawn in February 2007. Class 444 units transferred to the Weymouth line were replaced on Portsmouth services by Class 450 Desiros which became available after the reintroduction of the Class 458 units on the Waterloo to Reading line. The decision to transfer many Class 444 units to the Weymouth line was not popular. Portsmouth line passengers protested over the use of Class 450 on some services, while there were complaints that the Class 444 were inferior to the units they replaced on the Weymouth line.
+Class 444s are currently used on the following services:
+
+Waterloo to Basingstoke (peak services)
+Waterloo to Portsmouth Harbour via Guildford (shared with Class 450)
+Waterloo to Portsmouth Harbour via Basingstoke and Fareham (shared with Class 450)
+Waterloo to Weymouth / Poole
+
+
+== Refresh ==
+South Western Railway has conducted a refurbishment programme under its contract from 2017 onwards. As part of this work, every unit has been deep cleaned, and the carpets and seat covers in standard class have been replaced. In addition, plug sockets have been provided at every pair of seats, and the guard's office and buffet unit in the accessible carriage have been removed to provide extra seats. First class has been reduced from 35 seats to 32, and the 2+1 seating has been replaced with 2+2 seating, with leather seats and new tables providing facilities for wireless charging.
+
+
+== Fleet details ==
+
+
+=== Interiors ===
+
+
+=== Illustration ===
+
+
+=== Named units ===
+The following units have received names:
+
+444001: Naomi House (de-named)
+444012: Destination Weymouth
+444018: FAB444
+444023: The Alex Wardle Foundation
+444040: The D-Day Story Portsmouth 80 Anniversary
+
+
+=== Special Liveries ===
+In 2019, 444019 was painted in a Pride livery to celebrate diversity in the company and its customers. It has rainbow flags at both cab ends, on both sides.
+
+
+== References ==
+
+
+== External links ==
+
+Class 444 "Desiro" - South Western Railway",
+      "type": "text",
+    },
+  ],
+}
+`;
+
+exports[`wikipedia > searches wikipedia 1`] = `
+{
+  "content": [
+    {
+      "text": "# British Rail Class 444
+
+page id: \`1487548\`
+
+## Snippet
+
+The British Rail Class 444 Desiro is a third-rail electric multiple-unit passenger train built by Siemens Transportation Systems in Austria between 2002",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 450
+
+page id: \`1290200\`
+
+## Snippet
+
+The British Rail Class 450 Desiro is a type of third-rail DC electric multiple unit (EMU) passenger train that entered service during 2003\\. Used for outer-suburban",
+      "type": "text",
+    },
+    {
+      "text": "# Class 444
+
+page id: \`21350166\`
+
+## Snippet
+
+Class 444 may refer to: British Rail Class 444 FS Class E.444 This disambiguation page lists articles associated with the title Class 444. If an internal",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 373
+
+page id: \`30875479\`
+
+## Snippet
+
+The British Rail Class 373, known in France as the TGV TMST and branded by Eurostar as the Eurostar e300, is a French designed and Anglo-French built electric",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 442
+
+page id: \`1391137\`
+
+## Snippet
+
+The British Rail Class 442 (5-WES) Wessex Electrics were electric multiple unit passenger trains introduced in 1988 by Network SouthEast on the South West",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 159
+
+page id: \`1040579\`
+
+## Snippet
+
+The British Rail Class 159 is a class of British diesel multiple unit passenger trains of the Sprinter family, built in 1989–1992 by British Rail Engineering",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 423
+
+page id: \`1035366\`
+
+## Snippet
+
+The British Rail Class 423 (4 VEP), electric multiple unit passenger trains were mostly built by British Rail (BR) at York Works from 1967 to 1974, although",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 57
+
+page id: \`776412\`
+
+## Snippet
+
+The British Rail Class 57 is a type of diesel locomotive that was remanufactured from Class 47s by Brush Traction of Loughborough between 1998 and 2004",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 411
+
+page id: \`980261\`
+
+## Snippet
+
+The British Rail Class 411 (4CEP) electric multiple units were built at Eastleigh works from 1956–63 for the newly electrified main lines in Kent. These",
+      "type": "text",
+    },
+    {
+      "text": "# British Rail Class 421
+
+page id: \`1028147\`
+
+## Snippet
+
+The British Rail Class 421 (4CIG) electric multiple units were built at BR's Holgate Road carriage works between 1964 and 1972\\. Units were built in two",
+      "type": "text",
+    },
+  ],
+}
+`;
