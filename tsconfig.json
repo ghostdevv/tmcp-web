@@ -7,8 +7,9 @@
 		"verbatimModuleSyntax": true,
 		"allowJs": true,
 		"checkJs": true,
-		"resolveJsonModule": true
+		"resolveJsonModule": true,
+		"types": ["@cloudflare/vitest-pool-workers"]
 	},
-	"include": ["src/**.ts", "src/**.js", "worker-configuration.d.ts"],
+	"include": ["src/**.ts", "src/**.js", "tests/**/*.ts", "worker-configuration.d.ts"],
 	"exclude": ["node_modules/**"]
 }
